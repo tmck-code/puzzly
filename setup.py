@@ -19,14 +19,14 @@ setuptools.setup(
     url='https://github.com/tmck-code/puzzly',
     packages=setuptools.find_packages(),
     package_data={
-        'puzzly': []
+        'puzzly': ['data/words_alpha.txt']
     },
     classifiers=[
         'Programming Language :: Python :: 3',
     ],
     entry_points={
         'console_scripts': [
-            'puzzly = puzzly.run:main',
+            'puzzly = puzzly.word_target.dictionary:main',
         ],
     },
     install_requires=[]
